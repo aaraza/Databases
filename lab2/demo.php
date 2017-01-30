@@ -26,8 +26,12 @@ if($bool){
 	echo "Bool is false<br>";
 }
 
+echo "<hr>";
+
 $bool = (int)$bool; //Explicit type conversion
 echo $bool . "<br>";
+
+echo "<hr>";
 
 $int = 1;
 $int2 = -1;
@@ -37,15 +41,21 @@ if($int > 2 && $int < 4){ //Conditional statement using the and operator
 	echo "Value 2 matches<br>";
 }
 
+echo "<hr>";
+
 $int = 1.5; //Implicit type conversion
 if(isset($int)){
 	echo "Int: " . $int . "<br>";
 }
 
+echo "<hr>";
+
 $greeting = "Hello, my name is "; //Strings
 $name = "Ali";
 
 echo $greeting . $name . "<br>";
+
+echo "<hr>";
 
 /* An array in PHP is actually an ordered map. 
    A map is a type that associates values to keys. */
@@ -60,7 +70,7 @@ $array = array(
 
 echo $array[1] . "<br>";
 
-
+echo "<hr>";
 
 $map = array(
 		"Name" => "Ali Raza",
@@ -75,6 +85,19 @@ foreach($map as $val){
 $int = NULL; //NULL Type
 if(isset($int)){
 	echo "Int: " . $int . "<br>";
+}
+
+echo "<hr>";
+for($i = 1; $i <= 10; $i++){
+	echo "This is iteration $i of the for loop.<br>";
+}
+
+echo "<hr>";
+
+$i = 1;
+while($i <= 10){
+	echo "This is iteration $i of the while loop.<br>";
+	$i++;
 }
 
 ?>
