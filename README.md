@@ -22,4 +22,4 @@ I will use this repo to host all the code I present in class. I may also post so
 
 #### SQL
 - [SQL Tutorial](https://community.modeanalytics.com/sql/tutorial/introduction-to-sql/)
-- [W3Schools](http://www.w3schools.com/sql/default.as)
+- [W3Schools](http://www.w3schools.com/sql/default.asp)
