@@ -4,11 +4,11 @@
   <title>Forms</title>
 </head>
 <body>
-<form action="" method="POST">
+<form action="" method=POST>
   First Name<br>
   <input type="text" name="firstname" required="required"><br>
   Last Name<br>
-  <input type="text" name="lastname" required="required"><br>
+  <input type="text" name="lastname"><br>
   <input type="radio" name="gender" value="m" checked="checked"> Male<br>
   <input type="radio" name="gender" value="f"> Female<br>
   <input type="radio" name="gender" value="o"> Other<br>
