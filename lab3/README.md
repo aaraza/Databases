@@ -8,8 +8,8 @@
 
 #### Using SQL
 
-`SHOW TABLES`   
+`SHOW TABLES;` 
 Displays all tables within database
 
-`DESCRIBE TABLE_NAME`
+`DESCRIBE TABLE_NAME;`
 Displays information about a particular table
