@@ -21,11 +21,10 @@ CREATE TABLE `person`(
 ###################################################################
 INSERT INTO `person` VALUES ("Ali", "Raza", 21);
 
-
 ##################################################################
-# Insert into specific columns by providing the name of the table followed 
-# by a parenthsized list of the columns you want to populate.
-# Then use the values keyword which accepts your input as 
+# Insert into specific columns by providing the name of the table 
+# followed by a parenthsized list of the columns you want to
+populate. Then use the values keyword which accepts your input as 
 # parameters. The order of the parameters is determined by
 # us in the parenthisized list.
 ###################################################################
