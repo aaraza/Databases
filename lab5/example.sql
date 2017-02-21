@@ -53,4 +53,14 @@ SELECT CONCAT(firstName, " ", lastName) AS fullName FROM `person`;
 # We can provide conditions using the WHERE keyword.
 ##################################################################
 SELECT * FROM `person` WHERE AGE IS NOT NULL;
-SELECT * FROM `person` WHERE AGE = 21; 
+SELECT * FROM `person` WHERE AGE = 21;
+
+##################################################################
+# Update statement
+##################################################################
+UPDATE person SET age=40 WHERE age is NULL;
+
+##################################################################
+# Delete statement
+##################################################################
+DELETE FROM person WHERE age>30;
