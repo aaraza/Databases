@@ -4,25 +4,26 @@ include "../../CONFIG.php";
 
 $mysqli = new mysqli($HOST, $USER, $PASS, $DB);
 
-if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQLI on Line 5";
-    exit();
+if($mysqli->connect_errno){
+	echo "Connection failed on line 5";
+	exit();
 }
 
-$query = "SELECT * FROM person";
-$result = $mysqli->query($query);
+$sql = "SELECT * FROM person;";
+$result = $mysqli->query($sql);
 
-while ($fieldinfo=mysqli_fetch_field($result)){
-    echo $fieldinfo->name . " " ;
-}  
+echo "<table>";
 
-echo "<br>";
+while($fieldInfo = mysqli_fetch_field($result)){
+	echo "<th>" . $fieldInfo->name . "</th>";
+}
 
 while($row = $result->fetch_array(MYSQLI_NUM)){
-    foreach($row as $r){
-        echo $r . "  ";
-    }
-    echo "<br>";
+	echo "<tr>";
+	foreach($row as $data){
+		echo "<td>" . $data . "</td>";
+	}
+	echo "</tr>";
 }
 
 ?>
