@@ -66,6 +66,18 @@ if(isset($_POST['submit'])){
         foreach($row as $r){
             echo "<td>" . $r . "</td>";
         }
+        ?>
+        <td>
+        <form action="" method="POST">
+          <input type="submit" name="delete" value="delete">
+          </form>
+        </td>
+        <td>
+        <form action="" method="POST">
+          <input type="submit" name="update" value="update">
+          </form>
+        </td>
+        <?php 
         echo "</tr>";
     }
     echo "</table>";
