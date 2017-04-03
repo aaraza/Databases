@@ -1,7 +1,7 @@
 <?php
 /*
  * @author Ali Raza
- * @description: Execute multiple queries on one page using a dropdown.
+ * @description: Search a DB
  */
 ?>
 
@@ -14,8 +14,9 @@
     </head>
 
 <body class="container">
-
-<br><br>
+<br>
+<a href="http://cs3380.rnet.missouri.edu/~aardz6/lab9/insert.php">Insert Into User</a>
+<hr>
 <form action="" method="POST" class="col-md-4 col-md-offset-5">
 	Search: 
 	<input type="text" name="search">
