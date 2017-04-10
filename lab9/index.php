@@ -68,14 +68,16 @@ if(isset($_POST['submit'])){
         }
         ?>
         <td>
-        <form action="" method="POST">
+        <form action="delete.php" method="POST">
+          <input type="hidden" name="fName" value='<?= $row[0]; ?>'>
           <input type="submit" name="delete" value="delete">
           </form>
         </td>
         <td>
-        <form action="" method="POST">
-          <input type="submit" name="update" value="update">
-          </form>
+        <form action="update.php" method="POST">
+          <input type="hidden" name="fName" value='<?= $row[0]; ?>'>
+          <input type="submit" name="update" value="Update">
+        </form>
         </td>
         <?php 
         echo "</tr>";
